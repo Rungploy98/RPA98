@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="" en>
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control Operator Login</title>
+</head>
+<!--
+    Rungploy Ardoin
+    6/10/22
+    Mission Control Operator Login
+-->
+
+<body bgcolor="#00FFF"></body>
+<!--
+    Changing the background color to aqua
+-->
+
+<script>
+    //User input first and last name
+    var yourName = prompt("What is your first and last name?");
+    //User input 3-digit guild tag
+    var guildTag = prompt("What is your 3-digit GuildTag?");
+
+    while (yourName.length <= 0 || yourName.length > 20)
+    //Determine the length of the name is no shorter than 0 and no longer than 20 charaters
+    {
+        yourName = prompt("Enter your name between 1 and 20 characters...");
+        //The prompt that will resend you to rewrite your name with the certain amount of characters
+    }
+
+    while (guildTag.length <= 0 || guildTag.length > 3)
+    //Determine the length of the guild tag is no shorter than 0 and no longer than 3-digits 
+    {
+        guildTag = prompt("Enter a Guild Tag between 1 and 3 characters...");
+        //The prompt that will resend you to rewite your guild tag
+    }
+
+
+    document.write("Welcome to the Security and Safety " + yourName);
+    //Welcoming statement with your name after 
+    document.write("<br></br>");
+    //Break tag
+    document.write("Enter your badge number " + guildTag + " at the gate");
+    //Statement after you enter your guild tag
+    document.write("<br></br>");
+    //Break tag
+</script>
+
+</html>
